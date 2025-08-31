@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Rathi | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ADB5;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(120deg, #00ADB5, #393E46);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #111;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background: #00ADB5;
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ADB5;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px){
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2 class="logo">Abhishek Rathi</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Hi, I'm Abhishek 👋</h1>
+      <p>BCA Student | Tech & Finance Enthusiast</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I'm Abhishek Rathi, a student passionate about technology and problem-solving.  
+      Currently pursuing BCA, I enjoy learning web development, programming, and finance.  
+      My aim is to grow into a skilled professional while exploring multiple domains of tech.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Class 12 (CBSE, 2025)</h3>
+      <p>English: 81 | Economics: 95 | Mathematics: 53 | Business Studies: 98 | Accountancy: 95 | Informatics Practices: 97</p>
+      <p><b>Result:</b> Pass with strong academic performance</p>
+    </div>
+    <div class="card">
+      <h3>Class 10 (CBSE, 2023)</h3>
+      <p>English: 82 | Hindi: 86 | Mathematics: 74 | Science: 70 | Social Science: 75 | Sanskrit: 86</p>
+      <p><b>Result:</b> Pass</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Web Development (HTML, CSS, JS Basics)</li>
+        <li>Programming (Python, Java Basics)</li>
+        <li>Database & SQL</li>
+        <li>Strong in Accounts & Economics</li>
+        <li>Problem Solving & Creativity</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:abhishekrathilv@gmail.com">abhishekrathilv@GMAIL.com</a></p>
+      <p>Phone: +91 8076706206</p>
+      <p>Location: New Delhi, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Abhishek Rathi | Portfolio</p>
+  </footer>
+</body>
+</html>
